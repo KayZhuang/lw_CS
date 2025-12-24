@@ -1,0 +1,10 @@
+python3 message_common_simulate_main.py \
+  100 \
+  0 \
+  "{'ip':'10.4.252.21','port':'6379','password':'appexnetworks243','db':'0'}" \
+  ./msg_402.txt \
+  50 \
+  0 \
+  100 \
+  quickly \
+  allInOne
