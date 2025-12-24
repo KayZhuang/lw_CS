@@ -15,4 +15,4 @@ cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePack
 py export_payload_bin.py .\msg_401.txt .\payload_401.bin
 
 cd C:\Users\Administrator\Desktop\test\lw_communication\server\test
-py tester.py client 10.4.252.20:15623 --customer-id 0 --client-id 18044 --type 401 --count 10 --payload-file "C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage\payload_401.bin"
+py tester.py client 10.4.252.20:15623 --legacy --customer-id 0 --client-id 18044 --type 401 --count 10 --payload-file "C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage\payload_401.bin"
