@@ -1,3 +1,6 @@
 cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage
 py -m pip install redis protobuf numpy
 py message_common_simulate_main.py 100 0 "{'ip':'10.4.252.21','port':'6379','password':'appexnetworks243','db':'0'}" ".\msg_402.txt" 50 0 100 quickly allInOne
+
+cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage
+1..10 | ForEach-Object { Start-Process -NoNewWindow py -ArgumentList @("message_common_simulate_main.py","2000","0","{'ip':'10.4.252.21','port':'6379','password':'appexnetworks243','db':'0'}",".\msg_402.txt","200","0","500","quickly","allInOne") }
