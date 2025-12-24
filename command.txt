@@ -8,3 +8,11 @@ cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePack
 
 cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage
 py message_common_simulate_main.py 3050 0 "{'ip':'10.4.252.21','port':'6379','password':'appexnetworks243','db':'0'}" ".\msg_402.txt" 10 0 1 quickly allInOne
+
+
+
+cd C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage
+py export_payload_bin.py .\msg_401.txt .\payload_401.bin
+
+cd C:\Users\Administrator\Desktop\test\lw_communication\server\test
+py tester.py client 10.4.252.20:15623 --customer-id 0 --client-id 18044 --type 401 --count 10 --payload-file "C:\Users\Administrator\Desktop\test\lw_communication\Tools\LwProtoMessagePackage\payload_401.bin"
